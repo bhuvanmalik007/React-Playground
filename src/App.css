@@ -40,8 +40,9 @@
   justify-content: space-around;
 }
 
-.flex-item {
-  background: tomato;
+.button {
+  order:2;
+  background: #E74C3C;
   padding: 5px;
   width: 400px;
   height: 50px;
@@ -55,8 +56,39 @@
   justify-content: space-around;
 }
 
-.flex-item1 {
-  background: tomato;
+.array {
+  order:1;
+  background: #F4D03F;
+  padding: 5px;
+  width: 400px;
+  height: 200px;
+  margin-top: 10px;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  color: white;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+.data-biding {
+  order:3;
+  background: #3498DB;
+  padding: 5px;
+  width: 400px;
+  height: 200px;
+  margin-top: 10px;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  color: white;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+.calculator {
+  order:4;
+  background: #2ECC71;
   padding: 5px;
   width: 400px;
   height: 200px;

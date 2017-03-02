@@ -104,16 +104,16 @@ const App = () =>
      <Clock />
    </div>
    <div className="flex-container">
-     <div className="flex-item">
+     <div className="button">
        <ButtonTest />
      </div>
-     <div className="flex-item">
+     <div className="array">
        <ArrayRender />
      </div>
-     <div className="flex-item">
+     <div className="data-biding">
        <InputTest />
      </div>
-     <div className="flex-item1">
+     <div className="calculator">
        <Calculator />
      </div>
    </div>
