@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import webtorrent from 'webtorrent';
 import logo from './logo.svg';
 import './App.css';
 import ArrayRender from './components/arrayrendering';
 import Calculator from './components/temperaturecalculator';
+import FilterProductTable from './components/searchfilter';
+import TorrentDownload from './components/webtorrent';
 
 
-// const user = {
-//   name: "bhuvan"
-// }
+
 const Welcome = (props) =>
    <h1>Hello, {props.name} {props.lastName}!</h1>;
 
@@ -116,8 +117,20 @@ const App = () =>
      <div className="calculator">
        <Calculator />
      </div>
+     <div className="searchFilter">
+       <FilterProductTable />
+     </div>
+   </div>
+   <div className="flex-container1">
+     <div className="searchFilter">
+       <TorrentDownload />
+     </div>
    </div>
  </div>
+
+ {/* <div className="searchFilter">
+   <FilterProductTable />
+ </div> */}
 
 
 export default App;
