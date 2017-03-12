@@ -7,7 +7,10 @@
     "react-scripts": "0.9.0"
   },
   "dependencies": {
+    "babel": "^6.23.0",
+    "lodash.flow": "^3.5.0",
     "react": "^15.4.2",
+    "react-ace": "^4.1.6",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
     "webtorrent": "^0.98.9"

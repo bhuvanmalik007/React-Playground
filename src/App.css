@@ -28,40 +28,48 @@
 }
 
 .flex-container {
-  /* We first create a flex layout context */
   display: flex;
-  /* Then we define the flow direction and if we allow the items to wrap
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;
-   */
   flex-flow: row wrap;
-  /* Then we define how is distributed the remaining space */
   justify-content: space-around;
   align-items: flex-start;
   justify-content: space-between;
 }
-.flex-container1 {
-  /* We first create a flex layout context */
+
+.flex-ace-container {
   display: flex;
-  /* Then we define the flow direction and if we allow the items to wrap
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;
-   */
-  flex-flow: row wrap;
-  /* Then we define how is distributed the remaining space */
-  justify-content: space-around;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
 }
 
 .button {
-  order:2;
+  order: 2;
   background: #E74C3C;
+}
+
+.array {
+  order: 1;
+  background: #F4D03F;
+}
+
+.data-biding {
+  order: 3;
+  background: #3498DB;
+}
+
+.calculator {
+  order: 4;
+  background: #2ECC71;
+}
+
+.searchFilter {
+  order: 4;
+  background: #FF5733;
+}
+
+.flex-item {
   padding: 5px;
   flex-basis: 30%;
-  /*height: 50px;*/
   margin-top: 10px;
   line-height: 20px;
   font-weight: bold;
@@ -72,63 +80,17 @@
   justify-content: space-around;
 }
 
-.array {
-  order:1;
-  background: #F4D03F;
-  padding: 5px;
-  flex-basis: 30%;
-  height: 200px;
-  margin-top: 10px;
-  line-height: 20px;
-  font-weight: bold;
-  font-size: 1em;
-  text-align: center;
-  color: white;
-  flex-grow: 1;
-  justify-content: space-around;
+.torrentStrip {
+  background: #EB984E;
 }
-.data-biding {
-  order:3;
-  background: #3498DB;
-  padding: 5px;
-  flex-basis: 30%;
-  height: 200px;
-  margin-top: 10px;
-  line-height: 20px;
-  font-weight: bold;
-  font-size: 1em;
-  text-align: center;
-  color: white;
-  flex-grow: 1;
-  justify-content: space-around;
+
+.transpilerStrip {
+  background: #ABB2B9;
 }
-.calculator {
-  order:4;
-  background: #2ECC71;
+
+.aceEditor {
   padding: 5px;
-  flex-basis: 30%;
-  /*height: 200px;*/
+  height: 100%;
+  width: 50%;
   margin-top: 10px;
-  line-height: 20px;
-  font-weight: bold;
-  font-size: 1em;
-  text-align: center;
-  color: white;
-  flex-grow: 1;
-  justify-content: space-around;
-}
-.searchFilter {
-  order:4;
-  background: #FF5733;
-  padding: 5px;
-  flex-basis: 30%;
-  /*height: 200px;*/
-  margin-top: 10px;
-  line-height: 20px;
-  font-weight: bold;
-  font-size: 1em;
-  text-align: center;
-  color: white;
-  flex-grow: 1;
-  justify-content: space-around;
 }

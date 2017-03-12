@@ -37,7 +37,7 @@ const products = [
 ];
 class ProductTable extends React.Component{
   render(){
-    let x = products.filter((product) => product.name.toLowerCase().includes(this.props.searchString)).map((product)=>(<tr>
+    let x = products.filter((product) => product.name.toLowerCase().includes(this.props.searchString)).map((product, index)=>(<tr key={index}>
       <td>{product.name}</td>
       <td>{product.price}</td>
     </tr>));

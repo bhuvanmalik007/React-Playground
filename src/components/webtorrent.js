@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../App.css';
 import webtorrent from 'webtorrent';
 
@@ -10,16 +10,10 @@ const startDownload = () => {
     // Torrents can contain many files. Let's use the first.
     var file = torrent.files[0];
     console.log(file);
-
     // Display the file by adding it to the DOM. Supports video, audio, image, etc. files
     file.appendTo('body');
   })
 }
-
-// const stopDownload = ()=>{
-//   client.remove(torrentId, ()=>{console.log("removed");});
-//   document.getElementById('body').detach();
-// }
 
 const TorrentDownload = () => {
   return (
@@ -29,9 +23,6 @@ const TorrentDownload = () => {
       <button onClick={startDownload}>
         START STREAM
       </button>
-      {/* <button onClick={stopDownload}>
-        STOP STREAM
-      </button> */}
     </div>
   );
 }

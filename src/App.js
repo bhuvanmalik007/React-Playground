@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import webtorrent from 'webtorrent';
+// import webtorrent from 'webtorrent';
 import logo from './logo.svg';
 import './App.css';
 import ArrayRender from './components/arrayrendering';
 import Calculator from './components/temperaturecalculator';
 import FilterProductTable from './components/searchfilter';
 import TorrentDownload from './components/webtorrent';
-
+import MainTransformer from './components/estransformer';
 
 
 const Welcome = (props) =>
@@ -105,32 +105,31 @@ const App = () =>
      <Clock />
    </div>
    <div className="flex-container">
-     <div className="button">
+     <div className="button flex-item">
        <ButtonTest />
      </div>
-     <div className="array">
+     <div className="array flex-item">
        <ArrayRender />
      </div>
-     <div className="data-biding">
+     <div className="data-biding flex-item">
        <InputTest />
      </div>
-     <div className="calculator">
+     <div className="calculator flex-item">
        <Calculator />
      </div>
-     <div className="searchFilter">
+     <div className="searchFilter flex-item">
        <FilterProductTable />
      </div>
    </div>
-   <div className="flex-container1">
-     <div className="searchFilter">
+   <div >
+     <MainTransformer />
+   </div>
+   <div className="flex-container">
+     <div className="flex-item torrentStrip">
        <TorrentDownload />
      </div>
    </div>
  </div>
-
- {/* <div className="searchFilter">
-   <FilterProductTable />
- </div> */}
 
 
 export default App;
